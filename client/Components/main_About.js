@@ -11,9 +11,9 @@ function MainAbout() {
             think?
           </p>
         </main>
-        <nav>
+        <p>
           <Link to="/">Home</Link>
-        </nav>
+        </p>
       </>
     );
   }
