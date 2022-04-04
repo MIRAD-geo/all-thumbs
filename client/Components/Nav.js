@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
 import Cart from './shopping-chart';
+import CheckoutPreview from './CheckoutPreview';
 
 function Nav() {
     return (
@@ -29,9 +30,8 @@ function Nav() {
                                 >
                             </li>
                             <li>
-                                <a class="md:p-4 py-2 block hover:text-green-400" href="#"
-                                ><Cart /></a
-                                >
+                            <Link to='placeholder' class="md:p-4 py-2 block hover:text-green-400" href="#"
+                                ><Cart /></Link>
                             </li>
                             <li>
                                 <a
