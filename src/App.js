@@ -1,23 +1,17 @@
-import {
-    BrowserRouter,
-    Routes,
-    Route,
-    Link
-  } from "react-router-dom";
-  import * as React from "react";
- 
-  function App() {
-    return (
-      <BrowserRouter>
-        <div>
-          <h1>Hello, React Router!</h1>
-          <Routes>
-            <Route path="/" element={<Home />} />
-          </Routes>
-        </div>
-      </BrowserRouter>
-    );
-  }
+import * as React from "react";
+import { Routes, Route, Link } from "react-router-dom";
+
+function App() {
+  return (
+    <div className="App">
+      <h1>Welcome to React Router!</h1>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </div>
+  );
+}
 
   function Home() {
     return (

@@ -1,5 +1,11 @@
 import * as React from "react";
-import { render } from 'react-dom';
-import App from "./App.js";
+import * as ReactDOM from "react-dom";
+import { HashRouter } from "react-router-dom";
+import App from "./App";
 
-render(<App />,document.getElementById("root"));
+ReactDOM.render(
+  <HashRouter>
+    <App />
+  </HashRouter>,
+  document.getElementById("root")
+)

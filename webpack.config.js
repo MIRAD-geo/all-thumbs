@@ -3,15 +3,18 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
+const htmlPlugin = new HtmlWebpackPlugin({
+     template: './src/index.html',
+     filename: './index.html'
+})
+ 
 const config = {
-  entry: [
-    'react-hot-loader/patch',
-    './src/index.js'
-  ],
+  entry: path.join(__dirname, 'src/index.js'),
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js'
   },
+  mode: process.env.NODE_ENV,
   module: {
     rules: [
       {
@@ -49,17 +52,17 @@ const config = {
       }
     ]
   },
+  plugins: [htmlPlugin],
   devServer: {
     'static': {
-      directory: './dist'
-    }
+      directory: path.join(__dirname, './dist'),
+      publicPath: '/dist',
+    },
+    proxy: {'/api': "http://localhost:3000"}
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-     template: './src/index.html'
-    }),
-    new CleanWebpackPlugin()
-  ]
+  resolve: {
+      extensions: ['.js', ',jsx', '.css']
+  }
 };
 
 module.exports = config;
