@@ -4,12 +4,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const htmlPlugin = new HtmlWebpackPlugin({
-     template: './src/index.html',
+     template: './client/index.html',
      filename: './index.html'
 })
  
 const config = {
-  entry: path.join(__dirname, 'src/index.js'),
+  entry: path.join(__dirname, 'client/index.js'),
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js'
