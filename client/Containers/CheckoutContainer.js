@@ -1,6 +1,12 @@
-// import React, {Component} from 'react';
-// import {connect} from 'react-redux';
+import React, {Component} from 'react';
+import CheckoutForm from '../components/checkout_form.js';
 
-// import CheckoutForm from '../components/checkout_form.jsx';
+function Checkout() {
+    return (
+      <>
+      <CheckoutForm />
+      </>
+    )
+}
 
-// export default CheckoutContainer;
+export default Checkout;
