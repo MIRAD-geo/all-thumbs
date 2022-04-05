@@ -5,9 +5,9 @@ import About from './Components/main_About'
 import Shop from './Containers/ShopContainer'
 import CheckoutPreview from './Components/CheckoutPreview'
 import Checkout from './Containers/CheckoutContainer'
-import PlantDetails from "./Components/plants_Details";
-import Plants from "./Components/shop_plants";
-import FakeConfirmation from './Components/FakeConfirmation'
+import FakeComfirmation from './Components/FakeConfirmation'
+import Plants from './Components/shop_plants'
+import PlantDetails from './Components/plants_Details'
 
 function App() {
   return (
@@ -18,9 +18,9 @@ function App() {
         <Route exact path="/shop" element={<Shop />} />
         <Route exact path="/placeholder" element={<CheckoutPreview/>} />
         <Route exact path="/checkout" element={<Checkout />} />
-        <Route exact path="/details" element={<PlantDetails />} />
+        <Route exact path="/confirm" element={<FakeComfirmation/>} />
         <Route exact path="/plantShop" element={<Plants />} />
-        <Route exact path="/confirm" element={<FakeConfirmation/>} />
+        <Route exact path="/details" element={<PlantDetails />} />
       </Routes>
     </div>
   );

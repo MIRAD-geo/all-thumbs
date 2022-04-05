@@ -17,7 +17,7 @@ function PlantDetails() {
               <a class="flex-grow border-b-2 border-gray-300 py-2 text-lg px-1">Reviews</a>
               <a class="flex-grow border-b-2 border-gray-300 py-2 text-lg px-1">Details</a>
             </div>
-            <p class="leading-relaxed mb-4">Architectural and sturdy, this plant is easy to care for and highly adaptable. Also known as a Snake Plant and Mother-in-Law’s Tongue.</p>
+            <p class="leading-relaxed mb-4">Architectural and sturdy, this plant is easy to care for and highly adaptable. Also known as a Snake Plant and Mother-in-Law's Tongue.</p>
             <div class="flex border-t border-gray-200 py-2">
               <span class="text-gray-500">Difficulty</span>
               <span class="ml-auto text-gray-900">Easy </span>
