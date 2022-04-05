@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const path = require('path');
 const PORT = 1111;
+const router = require('./routers.js');
 
 const app = express();
 app.use(express.json());
@@ -10,6 +11,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, '../dist')));
 app.use(cors());
 
+app.use('/api', router);
+
+//unknown routes
 app.use('*', (req, res) => {
 	return res
 		.status(404)
