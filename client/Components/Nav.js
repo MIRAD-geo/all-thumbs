@@ -37,9 +37,7 @@ function Nav() {
                                 >
                             </li>
                             <li> <a>
-                            <Cart />
-                            <CheckoutPreview/>
-                            {/* <button onClick={() => dispatch({type: "OPEN_CART"})}> <CheckoutPreview/> </button> */}
+                            <Link to='/placeholder' class="md:p-4 py-2 block hover:text-green-400" href="#"> <Cart /></Link>        
                             </a>
                             </li>
                             <li>

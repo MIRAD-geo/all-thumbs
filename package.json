@@ -44,13 +44,10 @@
     "webpack-dev-server": "^4.7.4"
   },
   "dependencies": {
-<<<<<<< HEAD
     "@reduxjs/toolkit": "^1.8.1",
-=======
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "@fortawesome/react-fontawesome": "^0.1.18",
->>>>>>> dev
     "cors": "^2.8.5",
     "express": "^4.17.3",
     "pg": "^8.7.3",

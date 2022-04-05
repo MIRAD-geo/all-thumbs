@@ -1,19 +1,22 @@
-import { createSlice, PayloadAction } from '@reduxjs/toolkit'
+import { createSlice, current } from '@reduxjs/toolkit'
 
-const initialState = {
-    items: [],
-    amount: 0
-}
+// const initialState = {
+//     items: [],
+//     amount: 0
+// }
 
 export const cartSlice = createSlice({
     name: 'cart',
-    initialState,
+    initialState : {
+        items: [],
+        amount: 0
+    },
     reducers: {
         checkOut:(state) => {
-            state
+            initialState
         },
         addItem: (state, action) => {
-            if (state.items.length) {
+            if (state.items.length > 0) {
                 for (item of state.items) {
                     if (state.items[item].name === action.payload.name) {
                         state.items[item].amount++;
@@ -21,8 +24,8 @@ export const cartSlice = createSlice({
                     }
                 }
             }
-            state.items.amount++
-            // state.items.push(action.payload)
+            state.amount++
+            state.items.push(action.payload)
         },
         removeItem: (state, action) => {
             state.items.splice(action.payload,1)

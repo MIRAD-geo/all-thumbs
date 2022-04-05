@@ -1,15 +1,11 @@
 import * as React from "react";
 import { Routes, Route, Link } from "react-router-dom";
-import Home from './Containers/MainContainer'
-import About from './Components/main_About'
-import Shop from './Containers/ShopContainer'
-import CheckoutPreview from './Components/CheckoutPreview'
-import Checkout from './Containers/CheckoutContainer'
-<<<<<<< HEAD
-import PlantDetails from "./Components/plants_Details"
-=======
+import Home from './Containers/MainContainer';
+import About from './Components/main_About';
+import Shop from './Containers/ShopContainer';
+import CheckoutPreview from './Components/CheckoutPreview';
+import Checkout from './Containers/CheckoutContainer';
 import FakeComfirmation from './Components/FakeConfirmation'
->>>>>>> dev
 
 function App() {
   return (
@@ -20,11 +16,7 @@ function App() {
         <Route exact path="/shop" element={<Shop />} />
         <Route exact path="/placeholder" element={<CheckoutPreview/>} />
         <Route exact path="/checkout" element={<Checkout />} />
-<<<<<<< HEAD
-        <Route exact path="/details" element={<PlantDetails />} />
-=======
         <Route exact path="/confirm" element={<FakeComfirmation/>} />
->>>>>>> dev
       </Routes>
     </div>
   );
