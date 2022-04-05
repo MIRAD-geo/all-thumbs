@@ -1,16 +1,16 @@
-body {
+ /* body {
     font-family: Arial;
     font-size: 17px;
     padding: 8px;
-  }
+  } 
   
-  h1 {
+ h1 {
     text-align: center;
   }
   
   * {
     box-sizing: border-box;
-  }
+  } 
   
   .row {
     display: -ms-flexbox;
@@ -96,12 +96,12 @@ body {
     color: grey;
   }
   
-  /* Responsive layout */
-  @media (max-width: 800px) {
+ 
+   @media (max-width: 800px) {
     .row {
       flex-direction: column-reverse;
     }
     .col-25 {
       margin-bottom: 20px;
     }
-  }
+  }  */
