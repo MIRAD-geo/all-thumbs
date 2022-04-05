@@ -1,17 +1,19 @@
 const db = require('./models');
 
+
 const controller = {};
 
 
-controller.getRealPlants = (req, res, next) => {
+controller.getRealPlants = async (req, res, next) => {
+  console.log('in here');
   try {
-    const query = 'SELECT * FROM real_plants';
-    db.query(query)
-      .then(response => {
-        console.log('GETREALPLANTS RESPONSE: ', response);
-        res.locals.realPlants = response;
-        return next();
-      })
+    const queryStr = 'SELECT * FROM real_plants';
+    const response = await db.query(queryStr)
+      // .then(response => {
+        console.log('GETREALPLANTS RESPONSE: ', response.rows);
+        res.locals.realPlants = response.rows;
+      // })
+      next();
   }
   catch (err) {
     return next({
@@ -25,15 +27,15 @@ controller.getRealPlants = (req, res, next) => {
 };
 
 
-controller.getFakePlants = (req, res, next) => {
+controller.getFakePlants = async (req, res, next) => {
   try {
-    const query = 'SELECT * FROM fake_plants';
-    db.query(query)
-      .then(response => {
+    const queryStr = 'SELECT * FROM fake_plants';
+    const response = await db.query(queryStr)
+      // .then(response => {
         console.log('GETFAKEPLANTS RESPONSE: ', response);
-        res.locals.fakePlants = response;
-        return next();
-      })
+        res.locals.fakePlants = response.rows;
+        next();
+      // })
   }
   catch (err) {
     return next({
@@ -46,3 +48,5 @@ controller.getFakePlants = (req, res, next) => {
   }
 };
 
+
+module.exports = controller;
