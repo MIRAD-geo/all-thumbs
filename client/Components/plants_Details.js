@@ -48,7 +48,7 @@ function PlantDetails() {
               </button>
             </div>
           </div>
-          <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="https://bloomscape.com/wp-content/uploads/2021/06/bloomscape_hedgehog-aloe_stone_0621-scaled-e1633462157873.jpg?ver=542489"/>
+          <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="https://dummyimage.com/400x400"/>
         </div>
       </div>
     </section>

@@ -1,7 +1,12 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
+import styles from './checkout.css'
+import {useSelector} from 'react-redux';
 
 function CheckoutPreview() {
+
+  // const cart = useSelector(state => state.cartData.isOpen)
+
   return (
   <div class="container mx-auto mt-10">
     <div class="flex shadow-md my-10">

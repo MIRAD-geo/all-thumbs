@@ -1,8 +1,16 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
 import Cart from './shopping-chart';
+import CheckoutPreview from './CheckoutPreview';
+import PlantDetails from "./plants_Details";
+import { useSelector, useDispatch } from 'react-redux' 
 
 function Nav() {
+
+    // const open = useSelector(...state => state.cartData.isOpen)
+    const dispatch = useDispatch();
+  
+
     return (
         <>
             <header>
@@ -13,6 +21,7 @@ function Nav() {
                     </div>
                     <div class="hidden w-full md:flex md:items-center md:w-auto" id="menu">
                         <ul class="pt-4 text-base text-gray-700 md:flex md:justify-between md:pt-0" >
+                           
                             <li>
                                 <Link to='/plantShop' class="md:p-4 py-2 block hover:text-green-400" href="#">Plants</Link>
                             </li>
@@ -26,8 +35,9 @@ function Nav() {
                                 >Learn</a
                                 >
                             </li>
-                            <li>
-                            <Link to='/placeholder' class="md:p-4 py-2 block hover:text-green-400" href="#"> <Cart /></Link>
+                            <li> <a>
+                            <Link to='/placeholder' class="md:p-4 py-2 block hover:text-green-400" href="#"> <Cart /></Link>        
+                            </a>
                             </li>
                             <li>
                                 <a
