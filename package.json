@@ -34,6 +34,7 @@
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
     "jest": "^27.5.1",
+    "postcss": "^8.4.12",
     "postcss-loader": "^6.2.1",
     "style-loader": "^3.3.1",
     "tailwindcss": "^3.0.23",
@@ -43,8 +44,16 @@
     "webpack-dev-server": "^4.7.4"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@reduxjs/toolkit": "^1.8.1",
+=======
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "@fortawesome/react-fontawesome": "^0.1.18",
+>>>>>>> dev
     "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "pg": "^8.7.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-hot-loader": "^4.13.0",
