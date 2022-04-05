@@ -1,6 +1,8 @@
 import * as React from "react";
+import {connect} from 'react-redux';
 import { Link } from "react-router-dom";
 import Nav from '../Components/Nav'
+import {useSelector} from 'react-redux'
 
 function Home() {
     return (
@@ -19,4 +21,5 @@ function Home() {
     );
   }
 
-  export default Home;
+export default Home;
+  // export default connect(mapStateToProps, mapDispatchToProps)(Home);
