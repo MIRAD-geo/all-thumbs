@@ -14,10 +14,13 @@ function Nav() {
                     </div>
                     <div class="hidden w-full md:flex md:items-center md:w-auto" id="menu">
                         <ul class="pt-4 text-base text-gray-700 md:flex md:justify-between md:pt-0" >
-                            <li>
+                            {/* <li>
                                 <a class="md:p-4 py-2 block hover:text-green-400" href="#"
                                 >Plants</a
                                 >
+                            </li> */}
+                            <li>
+                                <Link to='/plantShop' class="md:p-4 py-2 block hover:text-green-400" href="#">Plants</Link>
                             </li>
                             <li>
                                 <a class="md:p-4 py-2 block hover:text-green-400" href="#"
