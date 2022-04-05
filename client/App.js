@@ -7,7 +7,7 @@ import CheckoutPreview from './Components/CheckoutPreview'
 import Checkout from './Containers/CheckoutContainer'
 import PlantDetails from "./Components/plants_Details";
 import Plants from "./Components/shop_plants";
-import FakeComfirmation from './Components/FakeConfirmation'
+import FakeConfirmation from './Components/FakeConfirmation'
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
         <Route exact path="/checkout" element={<Checkout />} />
         <Route exact path="/details" element={<PlantDetails />} />
         <Route exact path="/plantShop" element={<Plants />} />
-        <Route exact path="/confirm" element={<FakeComfirmation/>} />
+        <Route exact path="/confirm" element={<FakeConfirmation/>} />
       </Routes>
     </div>
   );
