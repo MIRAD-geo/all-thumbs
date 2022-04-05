@@ -17,7 +17,11 @@ function PlantDetails() {
               <a class="flex-grow border-b-2 border-gray-300 py-2 text-lg px-1">Reviews</a>
               <a class="flex-grow border-b-2 border-gray-300 py-2 text-lg px-1">Details</a>
             </div>
+<<<<<<< HEAD
+            <p class="leading-relaxed mb-4">Architectural and sturdy, this plant is easy to care for and highly adaptable. Also known as a Snake Plant and Mother-in-Law’s Tongue.</p>
+=======
             <p class="leading-relaxed mb-4">Architectural and sturdy, this plant is easy to care for and highly adaptable. Also known as a Snake Plant and Mother-in-Law's Tongue.</p>
+>>>>>>> dev
             <div class="flex border-t border-gray-200 py-2">
               <span class="text-gray-500">Difficulty</span>
               <span class="ml-auto text-gray-900">Easy </span>
@@ -48,7 +52,11 @@ function PlantDetails() {
               </button>
             </div>
           </div>
+<<<<<<< HEAD
+          <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="https://dummyimage.com/400x400"/>
+=======
           <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="https://bloomscape.com/wp-content/uploads/2021/06/bloomscape_hedgehog-aloe_stone_0621-scaled-e1633462157873.jpg?ver=542489"/>
+>>>>>>> dev
         </div>
       </div>
     </section>
