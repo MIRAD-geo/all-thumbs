@@ -9,7 +9,7 @@ function CheckoutPreview() {
   const dispatch = useDispatch();
   
   const checkout = () => {
-    dispatch(checkoutCart());
+    dispatch(checkOut());
   };
 
   const items = useSelector((state) => state.cart.items);
