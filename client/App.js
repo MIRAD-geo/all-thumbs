@@ -7,6 +7,7 @@ import Checkout from './Containers/CheckoutContainer';
 import FakeComfirmation from './Components/FakeConfirmation'
 import Plants from './Components/shop_plants'
 import PlantDetails from './Components/plants_Details'
+import MainFooter from './Components/main_Footer.js' 
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route exact path="/plantShop" element={<Plants />} />
         <Route exact path="/details" element={<PlantDetails />} />
       </Routes>
+      <MainFooter className='bg-orange-100' />
     </div>
   );
 }

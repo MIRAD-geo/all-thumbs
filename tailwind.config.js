@@ -1,9 +1,9 @@
 module.exports = {
     content: ["./client/**/*.{html,js}"],
     theme: {
-      extend: {},
+      extend: {}
     },
     plugins: [
       require('@tailwindcss/aspect-ratio')
-    ],
+    ]
   }
