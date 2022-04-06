@@ -7,7 +7,10 @@
     "clean": "rm dist/bundle.js",
     "build": "webpack --mode development",
     "start": "webpack serve --hot --mode development",
-    "test": "jest"
+    "test": "jest",
+    "style": "npx tailwindcss -i ./client/styles.css -o ./dist/output.css --watch",
+    "server": "nodemon server/server.js",
+    "dev": "concurrently \"npm run server\" \"npm run start\" \"npm run style\""
   },
   "repository": {
     "type": "git",
@@ -28,6 +31,7 @@
     "babel-jest": "^27.5.1",
     "babel-loader": "^8.2.4",
     "clean-webpack-plugin": "^4.0.0",
+    "concurrently": "^7.1.0",
     "css-loader": "^6.7.1",
     "eslint": "^8.12.0",
     "eslint-plugin-react": "^7.29.4",
@@ -45,10 +49,10 @@
   },
   "dependencies": {
     "@babel/plugin-transform-runtime": "^7.17.0",
-    "@reduxjs/toolkit": "^1.8.1",
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "@fortawesome/react-fontawesome": "^0.1.18",
+    "@reduxjs/toolkit": "^1.8.1",
     "@tailwindcss/aspect-ratio": "^0.4.0",
     "cors": "^2.8.5",
     "express": "^4.17.3",
