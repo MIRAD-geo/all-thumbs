@@ -23,13 +23,13 @@ function Home() {
       <Nav />
         <main>
           <h2 class="text-3xl text-center " >Welcome to All Thumbs!</h2>
-          <img class="h-80" src={Backdrop}></img>
+          <img src={Backdrop}></img>
           {/* <p>You can do this, I believe in you.</p> */}
         </main>
         
-        <h1 class='m-10 text-3xl bg-red-50 py-10'>Shop Our Collection</h1>
+        <h1 class='m-10 text-3xl bg-red-50 p-10 border border-amber-900/70'>Shop Our Collection</h1>
         
-        <nav class="flex justify-between bg-red-50 h-60">
+        <nav class="flex justify-between h-75 pb-10">
           <button onClick={() => addToCart()}>
             <img className='' src={Cactus}></img>    
             <p>Prickly Pear Cactus</p>
