@@ -88,7 +88,7 @@ function CheckoutPreview() {
             <span>Total cost</span>
             <span>$ {total} </span>
           </div>
-          <button onClick={checkout} disabled={cartIsEmpty} class="bg-emerald-300 font-semibold hover:bg-emerald-600 py-3 text-sm text-white uppercase w-full"><Link to='/checkout' className='text-white'>Checkout</Link></button>
+          <Link to='/checkout'><button onClick={checkout} disabled={cartIsEmpty} class="bg-emerald-300 font-semibold hover:bg-emerald-600 py-3 text-sm text-white uppercase w-full">Checkout</button></Link>
         </div>
       </div>
 
