@@ -4,6 +4,7 @@ import Cart from './shopping-chart';
 import CheckoutPreview from './CheckoutPreview';
 import PlantDetails from "./plants_Details";
 import { useSelector, useDispatch } from 'react-redux' 
+import Logo from '../assets/Logo.png'
 
 function Nav() {
 
@@ -14,10 +15,10 @@ function Nav() {
     return (
         <>
             <header>
-                <nav class="flex flex-wrap items-center justify-between w-full py-4 md:py-0 px-4 text-lg text-gray-700 bg-white">
+                <nav class="flex flex-wrap items-center justify-between w-full py-4 md:py-0 px-4 text-lg text-gray-700 bg-red-50">
                     <div>
 
-                        <Link to="/">All Thumbs</Link>
+                        <Link to="/"><img src={Logo} style={{'width':'250px'}}/></Link>
                     </div>
                     <div class="hidden w-full md:flex md:items-center md:w-auto" id="menu">
                         <ul class="pt-4 text-base text-gray-700 md:flex md:justify-between md:pt-0" >

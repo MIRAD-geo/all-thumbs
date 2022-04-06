@@ -25,7 +25,7 @@ const CartItem = ({ item, id }) => {
                 </div>
                 <div class="flex flex-col justify-between ml-4 flex-grow">
                     <span class="font-bold text-sm">{item.name}</span>
-                    <p onClick={() => deleteItem()} class="font-semibold hover:text-red-500 text-gray-500 text-xs">Remove</p>
+                    <p onClick={() => deleteItem()} class="font-semibold hover:text-red-500 text-stone-600  text-xs">Remove</p>
                 </div>
             </div>
             <div class="flex justify-center w-1/5">

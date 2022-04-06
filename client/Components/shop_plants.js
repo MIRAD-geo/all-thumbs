@@ -63,7 +63,7 @@ function Plants() {
                                     <div className='flex flex-col md:flex-row justify-between items-center text-gray-900'>
                                         <p className="mt-1 text-lg font-medium text-gray-900">$ {plants.price}</p>
 
-                                        <button onClick={() => addCart(plants.common_name, plants.price, 1, plants.url)} className='text-sm px-6 py-2 transition ease-in duration-200 uppercase rounded-full hover:bg-gray-800 hover:text-white border-2 border-gray-900 focus:outline-none'>Add To Cart</button>
+                                        <button onClick={() => addCart(plants.common_name, plants.price, 1, plants.url)} className='text-sm px-6 py-2 transition ease-in duration-200 uppercase rounded-full hover:bg-emerald-600 hover:text-white border-2  focus:outline-none'>Add To Cart</button>
                                     </div>
                                 </div>
                             ))}
@@ -82,7 +82,7 @@ function Plants() {
                                     <p className='text-amber-900 text-xs'><em>brown-thumb friendly</em></p>
                                     <div className='flex flex-col md:flex-row justify-between items-center text-gray-900'>
                                         <p className="mt-1 text-lg font-medium text-gray-900">$ {plants.price}</p>
-                                        <button onClick={() => addCart(plants.common_name, plants.price, 1, plants.url)} className='text-sm px-6 py-2 transition ease-in duration-200 uppercase rounded-full hover:bg-gray-800 hover:text-white border-2 border-gray-900 focus:outline-none'>Add To Cart</button>
+                                        <button onClick={() => addCart(plants.common_name, plants.price, 1, plants.url)} className='text-sm px-6 py-2 transition ease-in duration-200 uppercase rounded-full hover:bg-emerald-600 hover:text-white border-2  focus:outline-none'>Add To Cart</button>
                                     </div>
 
                                 </div>
