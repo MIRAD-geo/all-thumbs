@@ -12,7 +12,7 @@ function MainAbout() {
       <>
       <Nav />
         <main>
-          <h1 className='text-3xl py-10'>Meet the Team!</h1>
+          <h1 className='text-3xl py-20'>Meet the Team!</h1>
 
           <div className='flex justify-around grid-cols-3'>
             <img className='span-1' src={Michelle}></img>
@@ -26,10 +26,10 @@ function MainAbout() {
             <p>Rehema</p>
           </div>
 
-          <div className='flex justify-around grid-cols-3 text-bold text-sm pb-20'>
+          <div className='flex justify-around grid-cols-3 text-bold text-med pb-20'>
             <p>I would be a Cactus because I am an honest, reliable friend!</p>
             <p>I would be a Monstera because I love tropical weather!</p>
-            <p>I would be an oak tree because I'm big and strong!</p>
+            <p>I would be an Oak Tree because I'm big and strong!</p>
           </div>
 
           <div className='flex justify-around grid-cols-2'>
@@ -42,9 +42,9 @@ function MainAbout() {
             <p>Dee</p> 
           </div>  
 
-          <div className='flex justify-around grid-cols-3 text-bold text-sm pb-80'>
+          <div className='flex justify-around grid-cols-3 text-bold text-med pb-80'>
             <p>I would be a Cherry Blossom Tree because I bloom in a unique way!</p>
-            <p>I would be a Succulenet because I don't need a lot of attention to be happy!</p>
+            <p>I would be a Succulent because I don't need a lot of attention to be happy!</p>
           </div>
         
         </main>

@@ -22,7 +22,7 @@ function Home() {
       <>
       <Nav />
         <main>
-          <h2 class="text-3xl text-center " >Welcome to All Thumbs!</h2>
+          {/* <h2 class="text-3xl text-center " >Welcome to All Thumbs!</h2> */}
           <img src={Backdrop}></img>
           {/* <p>You can do this, I believe in you.</p> */}
         </main>
