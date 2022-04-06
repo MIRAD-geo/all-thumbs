@@ -1,5 +1,5 @@
 const express = require('express');
-const controller = require('./controllers.js');
+const controller = require('../controllers.js');
 const router = express.Router();
 
 router.get('/getAllPlants', 

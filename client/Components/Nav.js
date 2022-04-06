@@ -3,6 +3,11 @@ import { Link } from "react-router-dom";
 import Cart from './shopping-chart';
 import CheckoutPreview from './CheckoutPreview';
 
+function signOut() {
+    var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(() => console.log('User signed out.'))
+};
+
 function Nav() {
     return (
         <>
@@ -37,12 +42,14 @@ function Nav() {
                                 ><Cart /></Link>
                             </li>
                             <li>
-                                <a
+                                {/* <a
                                     class="md:p-4 py-2 block hover:text-green-400 text-green-500"
                                     href="#"
-                                >Sign Up</a
-                                >
+                                >Sign in with Google</a
+                                > */}
+                                <div class="g-signin2" data-onsuccess="onSignIn"></div>
                             </li>
+                            {/* <li><a href="#" onclick="signOut();">Sign out</a></li> */}
                         </ul>
                     </div>
                 </nav>
