@@ -36,7 +36,7 @@ function Nav() {
                                 >
                             </li>
                             <li> <a>
-                            <Link to='/placeholder' class="md:p-4 py-2 block hover:text-green-400" href="#"> <Cart /></Link>        
+                            <Link to='/reviewCart' class="md:p-4 py-2 block hover:text-green-400" href="#"> <Cart /></Link>        
                             </a>
                             </li>
                             <li>
