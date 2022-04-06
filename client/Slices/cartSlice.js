@@ -8,8 +8,8 @@ export const cartSlice = createSlice({
     name: 'cart',
     initialState,
     reducers: {
-        checkOut:(state) => {
-            initialState
+        checkOut:(state, action) => {
+            return initialState
         },
         addItem: (state, action) => {
             if (state.items.length > 0) {
